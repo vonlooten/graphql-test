@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { useBlockListQuery } from '../../generated/graphql';
-import { BlockListQuery } from '../../generated/graphql';
 import BlockList from '.';
 
 const BlockListContainer = () => {

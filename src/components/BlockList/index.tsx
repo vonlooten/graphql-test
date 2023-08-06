@@ -4,9 +4,9 @@ import { useQuery } from "@apollo/client";
 import { QUERY_BLOCK_LIST } from "./query";
 import { BlockListQuery, Block } from "../../generated/graphql";
 
-interface Props {
-  blockListData: BlockListQuery;
-}
+// interface Props {
+//   blockListData: BlockListQuery;
+// }
 
 function BlockList(props:BlockListQuery) {
   const { loading, error, data } = useQuery(QUERY_BLOCK_LIST);
