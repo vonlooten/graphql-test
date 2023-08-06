@@ -1,6 +1,7 @@
 overwrite: true
-schema: "https://api.koiner.app/graphql"
-documents: "src/**/*.tsx"
+schema: "https://api.koiner.app/graphql" 
+documents: './src/components/**/*.ts'
+verbose: true
 generates:
   src/generated/graphql.tsx:
     plugins:

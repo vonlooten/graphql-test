@@ -5,4 +5,3 @@
 - Mui
 - graphql
 - @graphql-codegen/cli
-
