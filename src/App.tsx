@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter, Route, Routes  } from 'react-router-dom';
+import Home from './pages/Home';
+import Layout from './components/Layout';
+import "./assets/index.css"
+// Supports weights 100-700
+import '@fontsource/roboto-mono/300.css';
+import '@fontsource/roboto-mono/400.css';
+import '@fontsource/roboto-mono/500.css';
+import '@fontsource/roboto-mono/600.css';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" Component={Layout}>
+            <Route path="/" Component={Home} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
